@@ -1,12 +1,13 @@
-public class Weapon 
+abstract public class Weapon 
 {
     private String name;
     private float atk;
 
     // public:
-        public Weapon()
+        public Weapon(String name, float atk)
         {
-
+            this.name = name;
+            this.atk = atk;
         }
 
         public String return_name()
@@ -20,8 +21,5 @@ public class Weapon
         }
 
         //astract
-        public float skill()
-        {
-            return 0;
-        }
+        abstract public float skill(float atk);
 }

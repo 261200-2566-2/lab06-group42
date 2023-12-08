@@ -48,15 +48,21 @@ public class Accessory implements Accessory_interface
     @Override
     public void equip(float[] stat1, float[] stat2) 
     {
-        stat1[0] += stat[0];
-        stat1[1] += stat[1];
-        stat1[2] += stat[2];
-        stat2[3] += stat[3];
+        if(stat != null)
+        {
+            stat1[0] += stat[0];
+            stat1[1] += stat[1];
+            stat1[2] += stat[2];
+            stat2[3] += stat[3];
+        }
     }
 
     @Override
     public void unequip(float[] stat1, float[] stat2) 
     {
+
+        //call this function?
+        //TO BE CONTINUE
         stat1[0] -= stat[0];
         stat2[0] = (stat2[0] > stat1[0])? stat2[0]: stat1[0];
 
