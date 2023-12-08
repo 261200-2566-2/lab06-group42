@@ -127,6 +127,9 @@ abstract public class Character implements Character_interface
         @Override
         abstract public void listen(int dialog_index, Character target);
 
+        /**
+         * check if this character lost or not?
+         */
         abstract public boolean is_lost();
 
         @Override
